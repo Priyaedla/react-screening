@@ -52,14 +52,17 @@ export function PortfolioDashboard() {
       setPortfolio(portfolio)
 
       const solBalance = mockData.balance / 1000000
+      console.log("solbalance we are going to use it:"+ JSON.stringify(solBalance))
     } catch (err) {
       setError('Error')
+      console.error("Error Occured :"+ JSON.stringify(err))
     }
     setIsLoading(false)
   }
 
   const calculateTotalValue = () => {
     const now = new Date()
+    console.log("Current Time and Date :" + JSON.stringify(now))
     return portfolio.tokens.reduce((total, token) => {
       return total + parseFloat(token.amount)
     }, 0)

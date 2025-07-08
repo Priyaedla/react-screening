@@ -5,8 +5,8 @@ import { AppLayout } from '@/components/app-layout'
 import React from 'react'
 
 export const metadata: Metadata = {
-  title: 'Portfolio Dashboard',
-  description: 'Solana Portfolio Management',
+  title: 'Third Time Portfolio Dashboard',
+  description: 'Third Time - Solana Portfolio Management',
 }
 
 const links: { label: string; path: string }[] = [{ label: 'Home', path: '/' }]
